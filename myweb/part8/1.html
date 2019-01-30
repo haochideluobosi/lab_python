@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="canonical" href="http://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/79064076"/> 
+    <script type="text/javascript">
+        var username = "dqcfkyqdxym3f8rb0";
+        var _blogger = username;
+        var blog_address = "http://blog.csdn.net/dqcfkyqdxym3f8rb0";
+        var static_host = "http://csdnimg.cn/release/phoenix/";
+        var currentUserName = ""; 
+        var fileName = '79064076';
+        var commentscount = 3;
+        var islock = false;
+        window.quickReplyflag = true;
+        var totalFloor = 3;
+        var isBole = false;
+        var isDigg = false;
+        var isExpert = false;
+        var isAdm = false;
+        var baiduKey = "";
+        var needInsertBaidu = true;
+        var isShowAds = true;
+    </script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <script src="http://c.csdnimg.cn/public/common/libs/jquery/jquery-1.9.1.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="http://c.csdnimg.cn/public/static/css/avatar.css">
+                <link rel="stylesheet" href="http://csdnimg.cn/release/phoenix/production/main-2548c42166.css">
+          <link rel="stylesheet" href="http://c.csdnimg.cn/public/common/toolbar/content_toolbar_css/content_toolbar.css">
+
+    <script src="http://csdnimg.cn/rabbit/exposure-click/main-1.0.5.js"></script>
+    <script type="text/javascript" src="http://csdnimg.cn/pubfooter/js/tracking-1.0.2.js" charset="utf-8"></script>
+    <script type="text/javascript" src="http://csdnimg.cn/release/phoenix/production/main-751559a05f.js"></script>
+
+    <script src="http://dup.baidustatic.com/js/ds.js"></script>
+    <script type="text/javascript">
+        // Traffic Stats of the entire Web site By baidu
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?6bcd52f51e9b3dce32bec4a3997715ac";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        // Traffic Stats of the entire Web site By baidu end
+    </script>
+    <meta name="description" content="翻译 | AI科技大本营参与 | Shawn编辑 | Donna［AI科技大本营导读］我们常常提及数据科学、机器学习和人工智能，也有一个整体的概念。但是，如果要清晰地说出三者的定义分别是什么，区别又是什么，相信能说出来的读者并不多。营长找到一篇Stack Overflow的数据科学家David Robinson的文章，用深入潜出的语言，诙谐地解释了三者地区别。每当我告诉别人我是数据科学家时，他们经" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+    <meta name="shenma-site-verification" content="5a59773ab8077d4a62bf469ab966a63b_1497598848">
+    <title>学习数据科学、机器学习与AI没有多大交集，一文告诉你三者最大区别 - CSDN博客</title>
+    <link href="http://csdnimg.cn/public/favicon.ico" rel="SHORTCUT ICON">
+                      <link rel="stylesheet" href="http://csdnimg.cn/release/phoenix/production/htmledit_views-b569b0e3ef.css">
+      </head>
+<body>
+<script id="toolbar-tpl-scriptId" prod="download" skin="black" src="http://c.csdnimg.cn/public/common/toolbar/js/content_toolbar.js" type="text/javascript" domain="http://blog.csdn.net/"></script>
+<div class="container clearfix">
+  <main>
+    <div style="display:none;">
+      <img src="" onerror='setTimeout(function(){if(top!==self){window.top.location.href=window.location.href}if(!/(csdn.net|iteye.com|baiducontent.com|googleusercontent.com|360webcache.com|sogoucdn.com|bingj.com)$/.test(window.location.hostname)){window.location.href="\x68\x74\x74\x70\x73\x3a\x2f\x2f\x77\x77\x77\x2e\x63\x73\x64\x6e\x2e\x6e\x65\x74"}},3000);'>
+    </div>
+    <article>
+        <h1 class="csdn_top">学习数据科学、机器学习与AI没有多大交集，一文告诉你三者最大区别</h1>
+        <div class="article_bar clearfix">
+            <div class="artical_tag">
+                <span class="original">
+                原创                </span>
+                <span class="time">2018年01月14日 00:00:00</span>
+            </div>
+
+            <ul class="article_tags clearfix csdn-tracking-statistics tracking-click" data-mod="popu_377" >
+                <li class="tit">标签：</li>
+
+<!--          [startarticletags]-->
+                <!--          [endarticletags]-->
+            </ul>
+            <ul class="right_bar">
+                <li><button class="btn-noborder"><i class="icon iconfont icon-read"></i><span class="txt">730</span></button></li>
+                <li class="edit">
+                    <a class="btn-noborder" href="" >
+                        <i class="icon iconfont icon-bianji"></i><span class="txt">编辑</span>
+                    </a>
+                </li>
+                <li class="del">
+                    <a class="btn-noborder" onclick="javascript:deleteArticle(fileName);return false;">
+                        <i class="icon iconfont icon-shanchu"></i><span class="txt">删除</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div id="article_content" class="article_content csdn-tracking-statistics tracking-click" data-mod="popu_519" data-dsm="post">
+                            <div class="htmledit_views">
+                        
+    <div class="rich_media_content" id="js_content">
+                    
+
+                    
+
+                    
+                    
+                    <p style="margin-left:8px;margin-right:8px;"><img src="http://ss.csdn.net/p?http://mmbiz.qpic.cn/mmbiz_jpg/BnSNEaficFAa8PThEFF5hiadMSJmkupCUlrtnyAR9eQj0QfK4egukRqIbtTkqPhlwBhXZ2eUzW0hwS6RjTdogfCQ/640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1" style="visibility:visible !important;" alt="640?wx_fmt=jpeg&amp;wxfrom=5&amp;wx_lazy=1" /><br /></p><p style="margin-left:8px;margin-right:8px;text-align:justify;line-height:1.5em;"><span style="color:rgb(136,136,136);font-size:14px;letter-spacing:.5px;"><br /></span></p><p style="margin-left:8px;margin-right:8px;text-align:justify;line-height:1.5em;"><span style="color:rgb(136,136,136);font-size:14px;letter-spacing:.5px;">翻译 | AI科技大本营</span></p><p style="margin-left:8px;margin-right:8px;text-align:justify;line-height:1.5em;"><span style="color:rgb(136,136,136);font-size:14px;letter-spacing:.5px;">参与 | Shawn</span></p><p style="margin-left:8px;margin-right:8px;text-align:justify;line-height:1.5em;"><span style="letter-spacing:.5px;font-size:14px;color:rgb(136,136,136);">编辑 | Donna</span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><br /></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(136,136,136);">［AI科技大本营导读］</span></strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(136,136,136);">我们常常提及数据科学、机器学习和人工智能，也有一</span><span style="color:rgb(136,136,136);font-size:15px;letter-spacing:.5px;">个整体的概念。但是，如果要清晰地说出三者的定义分别是什么，区别又是</span><span style="color:rgb(136,136,136);font-size:15px;letter-spacing:.5px;">什么，相信能说出来的读者并不多。营长找到一篇Stack Overflow的数据科学</span><span style="color:rgb(136,136,136);font-size:15px;letter-spacing:.5px;">家David Robinson的文章，用深入潜出的语言，诙谐地解释了三者地区别。</span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">每当我告诉别人我是数据科学家时，他们经常问我：“数据科学和机器学习有</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">什么区别？”，或者“也就是说你做人工智能的？”。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">这些问题我解释了很多很多次，看来是时候用到我的“三法则”了：</span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><blockquote><p style="line-height:1.75em;text-align:justify;margin-left:0px;margin-right:0px;"><span style="font-size:15px;letter-spacing:.5px;color:rgb(136,136,136);">同一代码你写了3次，那就编个函数</span></p><p style="line-height:1.75em;text-align:justify;margin-left:0px;margin-right:0px;"><span style="font-size:15px;letter-spacing:.5px;color:rgb(136,136,136);">同一建议你当面向别人提了3次，那就写一篇博文</span></p><p style="line-height:1.75em;text-align:right;margin-left:0px;margin-right:0px;"><span style="font-size:15px;letter-spacing:.5px;color:rgb(136,136,136);">— David Robinson (@drob) </span></p></blockquote><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">事实上，这三个领域是不可互换的，也没有多大交集，炒作营销的成分太</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">多。许多从事这三个领域的专业人士都能从直觉上判断出什么是数据科学，</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">什么是机器学习，什么是人工智能，但是很难说出具体区别是什么。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">在这篇文章中，我就这三个领域的区别提出了一个过度简化的定义：</span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">数据科学理解事物</span></strong></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">机器学习预测事物</span></strong></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">人工智能生成行动</span></strong></p></li></ul><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">澄清一点，我认为这个定义可以很好地帮助我们区分这三个领域，但是不能</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">作为判定条件：符合其中一个领域的定义并不代表属于这个领域。靠这些定</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">义来判断某人的工作或职位也是不靠谱的。真正要看的是他的专业和经验。</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">（这适用于任何工作：写文章是我工作的一部分，但我并不是职业作家）。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">需要注意的是，我是从描述的角度叙述问题的。也就是说，我感兴趣的是业</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">内人通常是如何使用这些术语的。</span></p><p><br /></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:center;"><strong><span style="letter-spacing:.5px;font-size:18px;color:rgb(123,12,0);">数据科学理解事物</span></strong></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">与其他两个领域不同，数据科学的目标是认识和理解事物。这也是人类的一</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">个目标。Jeff Leek就数据科学能实现哪些类型的理解作出了一个很好的定义</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">（http://jtleek.com/modules/01_DataScientistToolbox/03_01_typesOfQuestions/#1）。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">在这个定义中，既有描述性内容（“普通客户续费的概率为70%”），也有解释</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">性内容（“不同的销售人员有不同的续费率”）以及表因果的内容（“随机实验</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">表明派给Alice的客户续费的概率比派给Bob的客户高”）。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">数据科学的经典定义为：<strong>这是一门结合统计学、软件工程学和专业知识的学，也就是说，不是所有能理解事物的技术都属于数据科学</strong>。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">但是我们可以使用这个定义将数据科学与ML和AI区分开来。数据科学与后两</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">者最大的区别是它有人类的参与：人类理解结论、观察数据并从结论中获</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">益。“象棋算法利用数据科学来决定下一步棋怎么走”或者“谷歌地图利用数据</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">科学建议行驶方向”根本就是无稽之谈。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">数据科学的定义强调：</span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">统计推断</span></strong></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">数据可视化</span></strong></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">实验设计</span></strong></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">专业知识</span></strong></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">交流</span></strong></p></li></ul><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">数据科学可以使用简单的工具：根据SQL问题报告百分比和绘制线图。它也可</span><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">以使用非常复杂的方法：分析分布式数据库中的数万亿条记录，提出先进的</span><span style="color:rgb(63,63,63);font-size:15px;letter-spacing:.5px;">统计学方法，构建互动式的可视化工具。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">无论数据科学使用什么方法，它的目标都是更好地理解数据。</span></p><p><br /></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:center;"><strong><span style="letter-spacing:.5px;font-size:18px;color:rgb(123,12,0);">机器科学生成预测</span></strong></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">我认为机器学习就是做预测：“给定实例X以及特定特征，预测Y”。这些预测可以是对未来的预测（例如：“预测病人是否会患上脓毒病”），也可以是对质量的预测，这种问题计算机无法立刻得出结论（例如：“预测图像中是否有一只鸟”）。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">几乎所有Kaggle竞赛解决的都是机器学习问题：向参赛者提供数据，看他们能否对新的例子做出准确的预测。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">数据科学和机器学习之间有很多交集。例如，逻辑回归可以用来研究关系（“用户越有钱，其购买我们产品的概率就越大，因此我们应该改变我们的营销策略”），也可以用来做预测（“该用户购买我们产品的概率为53%，因此我们应该向他推荐产品”）。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">诸如随机森林这样的模型解释起来不是太难，它们更适合归类为“机器学习”，而深度学习这样的方法解释起来往往非常困难。如果你的目标是得出结论而不是做出预测，这个问题就会成为阻碍。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">我们可以将数据科学和机器学习想象成一个“谱”，较容易解释的模型靠近数据科学一侧，“黑箱”模型则靠近机器学习一侧。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">大多数从业者可以非常从容地在来回切换于两种任务之间。譬如我的工作既使用机器学习，也使用数据科学：我有时会用Stack Overflow的流量数据拟合某一模型，来判断哪些用户可能在寻找工作（机器学习），然后做出总结并构建用于研究模型工作原理的可视化工具（数据科学）。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">这样做可以帮你发现模型的缺陷，克服算法歧视(algorithmic bias)。正是出于这个原因，产品的机器学习模块往往是由数据科学家负责开发的。</span></p><p><br /></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:center;"><strong><span style="letter-spacing:.5px;font-size:18px;color:rgb(123,12,0);">人工智能生成行动</span></strong></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">在这三个领域之中，人工智能是发展最久、普遍认可度最高的，同时它也是最难定义的。寻求财富或关注的研究人员、记者和初创企业让 “人工智能”这个术语几乎成了炒作的代名词。  </span></p><blockquote><p style="line-height:1.75em;text-align:justify;margin-left:0px;margin-right:0px;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(136,136,136);">如果你在筹资，就是AI</span></p><p style="line-height:1.75em;text-align:justify;margin-left:0px;margin-right:0px;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(136,136,136);">如果你在招聘，就是ML</span></p><p style="line-height:1.75em;text-align:justify;margin-left:0px;margin-right:0px;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(136,136,136);">如果你在实践，就是线性回归如果你在debug，就是printf()</span></p><p style="line-height:1.75em;text-align:right;margin-left:0px;margin-right:0px;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(136,136,136);">— Baron Schwartz (@xaprb) </span><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"> </span></p></blockquote><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">这种炒作导致AI受到一些挫折，在我看来实属不幸，有些工作可能应该被称为是AI，但是却没人认为是。有些研究人员甚至抱怨AI效应：“我们现在还没法做到的都是AI”。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">人工智能的所有定义都有一个共同的界定：人工智能是一个可以执行或建议行为的自主代理。我认为可以被称为是AI的系统包括：</span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">博弈游戏算法（</span><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">Deep Blue</span><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">、 AlphaGo）</span></strong></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">机器人学和控制理论（运动规划，控制双足机器人的行走）</span></strong></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">优化（谷歌地图选择路线）</span></strong></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">自然语言处理（自动程序）</span></strong></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">强化学习</span></strong></p></li></ul><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">机器学习和人工智能也有很多交集。深度学习就是横跨ML和AI的一个典型例子。深度学习的典型应用是：用数据训练模型，然后让模型作出预测。另外，它在博弈游戏算法（如AlphaGo）的开发上也起到了巨大的作用。先前的博弈游戏系统，如Deep Blue，更着重于探索和优化未来的解空间（solution space）。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">数据科学和AI也是有区别的。如果通过分析销售数据发现，某些行业的客户续费的概率高于其他客户（得出结论），输出的是数字和统计图，而不是具体的行为。（高管可能会根据这种结论改变销售策略，但是这种行为不是自动的）。这意味着我的工作可以算作是数据科学：如果我说“我使用AI来提高销售量”，那就太做作了。</span></p><p><br /></p><blockquote><p style="line-height:1.75em;text-align:justify;margin-left:0px;margin-right:0px;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(136,136,136);">请不要因为某人训练了一个算法就说他“利用了AI的力量”</span></p><p style="line-height:1.75em;text-align:right;margin-left:0px;margin-right:0px;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(136,136,136);">— Dave Gershgorn (@davegershgorn) </span><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"> </span></p></blockquote><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">人工智能和机器学习的区别更为微妙，过去ML一直被认为是AI的一个子领域（计算机视觉就是一个典型AI问题）。但是我认为ML在很大程度上已经脱离了AI，上文提到的炒作后果是造成这一结果的一个原因。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">大多数研究预测问题的人不喜欢自称为AI研究者。（机器学习的许多重大突破都来源于统计学，而后者在AI领域的作用并没有多大）。这意味着，当你要解决的问题是“根据Y预测X”时，我建议你尽量避免使用AI这个术语。</span></p><p><br /></p><blockquote><p style="line-height:1.75em;text-align:justify;margin-left:0px;margin-right:0px;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(136,136,136);">按照当前的定义，y=mx+b是一个可以给出线的方向的AI程序。</span></p><p style="line-height:1.75em;text-align:justify;margin-left:0px;margin-right:0px;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(136,136,136);">— Amy Hoy (@amyhoy) </span><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"> </span></p></blockquote><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:center;"><strong><span style="letter-spacing:.5px;font-size:18px;color:rgb(123,12,0);">实例研究：</span></strong></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:center;"><strong><span style="letter-spacing:.5px;font-size:18px;color:rgb(123,12,0);">如何同时利用这三个领域？</span></strong></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">假设我们在开发自动驾驶汽车，我们要解决在遇到停车标志时停车的问题。我们需要使用到这三个领域的技术。</span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">机器学习</span></strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">：汽车必须使用摄像机识别停车标志。我们构建一个由数百万张街景照片组成的数据集，然后用它训练算法，让算法预测哪些照片中有停车标志。</span></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">人工智能：</span></strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">现在汽车可以识别停车标志，下一步它需要决定何时刹车。太早或太晚刹车都十分危险，我们要让汽车能处理不同的道路状况（例如，识别汽车没有及时减速的易滑道路），这是一个控制理论问题。</span></p></li></ul><ul class="ql-long-7256447 list-paddingleft-2" style="margin-left:0px;margin-right:0px;"><li><p style="line-height:1.75em;text-align:justify;"><strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">数据科学</span></strong><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">：在道路测试中，我们发现汽车的表现不够好，出现了一些漏识别的情况——在遇到停车标志时没有停车。在分析了道路测试数据之后，我们发现汽车漏识别的概率取决于一天当中的时段：汽车在日出之前和日出之后错过停车标志的概率更高。我们意识到，我们使用的大部分数据只包括大白天当中的目标。为此，我们构建了一个包含夜晚图像的数据集，重新完成机器学习步骤。</span></p></li></ul><p><br /></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:center;"><strong><span style="letter-spacing:.5px;color:rgb(123,12,0);font-size:18px;">结语</span></strong></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">人们常常将AI与通用AI混为一谈，后者可以执行不同领域的任务，甚至是超越人类智能的超智能AI。这样做会让人们对被称为是“AI”的系统产生不实际的预期。</span></p><p><br /></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);">文中提到的“自动程序”是指可以翻译自然语言并用自然语言回应的系统。这种系统和文本挖掘不同，后者的目标是得出结论（数据科学），或通过分类文本来分类文件（机器学习）。</span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><blockquote><p style="line-height:1.75em;text-align:justify;margin-left:0px;margin-right:0px;"><span style="letter-spacing:.5px;color:rgb(136,136,136);font-size:14px;">作者 | David Robinson</span></p><p style="line-height:1.75em;text-align:justify;margin-left:0px;margin-right:0px;"><span style="letter-spacing:.5px;color:rgb(136,136,136);font-size:14px;">原文链接 | http://varianceexplained.org/r/ds-ml-ai/</span></p></blockquote><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"><br /></span></p><p style="line-height:1.75em;margin-left:8px;margin-right:8px;text-align:justify;"><span style="letter-spacing:.5px;font-size:15px;color:rgb(63,63,63);"></span></p><p class="wihudong"><span style="letter-spacing:1px;"><strong>精彩预告</strong></span></p><p style="text-align:justify;"><span style="color:rgb(136,136,136);font-size:15px;font-family:inherit;font-weight:inherit;text-decoration:inherit;letter-spacing:.5px;">2018年1月16日“AI生态赋能2018论坛暨CSDN AI新战略发布会”即将重磅开启！</span></p><p style="text-align:justify;"><span style="color:rgb(136,136,136);font-size:15px;font-family:inherit;font-weight:inherit;text-decoration:inherit;letter-spacing:.5px;"><br /></span></p><p style="text-align:justify;"><span style="color:rgb(136,136,136);font-size:15px;font-family:inherit;font-weight:inherit;text-decoration:inherit;letter-spacing:.5px;">国内权威专家/名企CTO/CIO/精英大伽齐聚，各路高手全方位多视角共话AI时代。更有《2017-2018 AI行业应用&amp;技术人才成长路线图》重磅发布。席位有限，即刻扫码获得参会资格！</span><br /></p><p style="text-align:justify;line-height:1.75em;"><span style="font-size:15px;color:rgb(136,136,136);letter-spacing:1px;"><br /></span></p><p style="text-align:center;"><img class="img_loading" src="http://ss.csdn.net/p?https://mmbiz.qpic.cn/mmbiz_jpg/BnSNEaficFAa45785KeDXDwEdq7gBdcfp87UdheElYtWDnyke37KrcKNKSUfQARowRcaSbDmRfS6cxwYZZjFmUA/0?wx_fmt=jpeg" alt="0?wx_fmt=jpeg" /></p><p class="shifubrush" style="white-space:normal;"><br /></p><p style="white-space:normal;"><span style="font-size:14px;color:rgb(136,136,136);letter-spacing:.5px;">点击“阅读原文”报名参加☟☟☟</span></p>
+                </div>
+                  </div>
+                    </div>
+    </article>
+      <div class="readall_box csdn-tracking-statistics tracking-click" data-mod="popu_376">
+          <div class="read_more_mask"></div>
+          <a class="btn btn-large btn-gray-fred read_more_btn" target="_self">阅读全文</a>
+      </div>
+      <div class="article_copyright">
+         
+                    版权声明：本文为博主原创文章，未经博主允许不得转载。            http://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/79064076              </div>
+      <ul class="article_collect clearfix csdn-tracking-statistics tracking-click"  data-mod="popu_378">
+          <li class="tit">本文已收录于以下专栏：</li>
+<!--          [startarticlecolumns]-->
+                                <!--          [endarticlecolumns]-->
+      </ul>
+      <div class="comment_box clearfix" id="comments">
+          <div id="comment_form">
+              <div id="commentsbmitarear">
+                              </div>
+          </div>
+      </div>
+      <div class="comment_li_outbox">
+          <div id="comment_list"></div>
+      </div>
+
+      <div class="more_comment">
+          <div id="comment_bar" class="trackgin-ad" data-mod="popu_385"></div>
+      </div>
+
+      <!-- <h3 class="recommend_tit" id="related">相关文章推荐</h3> -->
+      <div class="recommend_list clearfix" id="rasss">
+                                          <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                <a href="http://blog.csdn.net/dev_csdn/article/details/79127658"  target="_blank" strategy="BlogCommendFromQuerySearch_0">
+                    <dd>
+                        <h2>一文读懂数据科学、机器学习和AI区别在哪里？</h2>
+                        <div class="summary">
+                            原文：What’s the difference between data science, machine learning, and artificial intelligence? 
+  作者：...                        </div>
+
+                        <ul>
+                            <li class="avatar_img"><img src="http://avatar.csdn.net/3/3/A/3_dev_csdn.jpg" alt="dev_csdn" title="dev_csdn"></li>
+                            <li class="user_name">dev_csdn</li>
+                            <li class="time">2018年01月22日 12:32</li>
+                            <li class="visited_num"><i class="icon iconfont icon-read"></i><span>4307</span></li>
+                        </ul>
+                    </dd>
+                </a>
+            </dl>
+                                                    <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                <a href="http://blog.csdn.net/hzp666/article/details/70154682"  target="_blank" strategy="BlogCommendFromQuerySearch_1">
+                    <dd>
+                        <h2>一文读懂机器学习、数据科学、深度学习和统计学之间的区别</h2>
+                        <div class="summary">
+                            一文读懂机器学习、数据科学、深度学习和统计学之间的区别
+
+
+
+
+[日期：2017-04-12]
+来源：数盟  作者：
+[字体：大 中 小]
+
+
+
+
+　　明晰了数据科学家所具有的...                        </div>
+
+                        <ul>
+                            <li class="avatar_img"><img src="http://avatar.csdn.net/3/C/7/3_hzp666.jpg" alt="hzp666" title="hzp666"></li>
+                            <li class="user_name">hzp666</li>
+                            <li class="time">2017年04月13日 10:25</li>
+                            <li class="visited_num"><i class="icon iconfont icon-read"></i><span>3155</span></li>
+                        </ul>
+                    </dd>
+                </a>
+            </dl>
+                                          <dl class="">
+            <script>
+            (function() {
+              var s = "_" + Math.random().toString(36).slice(2);
+              document.write('<div id="' + s + '"></div>');
+              (window.slotbydup=window.slotbydup || []).push({
+                id: '4765209',
+                container: s,
+                size: '808,120',
+                display: 'inlay-fix'
+              });
+            })();
+            </script>
+          </dl>
+                                        <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                <a href="http://blog.csdn.net/tkkzc3E6s4Ou4/article/details/79292759"  target="_blank" strategy="BlogCommendFromQuerySearch_2">
+                    <dd>
+                        <h2>AI速查表：神经网络、机器学习、深度学习与数据科学一览</h2>
+                        <div class="summary">
+                            本文是Chatbots Life创始人Stefan Kojouharov花费数学心血搜集的AI概念速查表，是学习神经网络、机器学习、深度学习与大数据必备之良方。1. 神经网络2. 神经网络结构3. 神...                        </div>
+
+                        <ul>
+                            <li class="avatar_img"><img src="http://avatar.csdn.net/5/A/A/3_tkkzc3e6s4ou4.jpg" alt="tkkzc3E6s4Ou4" title="tkkzc3E6s4Ou4"></li>
+                            <li class="user_name">tkkzc3E6s4Ou4</li>
+                            <li class="time">2018年02月08日 00:00</li>
+                            <li class="visited_num"><i class="icon iconfont icon-read"></i><span>148</span></li>
+                        </ul>
+                    </dd>
+                </a>
+            </dl>
+                                                    <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                <a href="http://blog.csdn.net/cpless/article/details/78352528"  target="_blank" strategy="BlogCommendFromQuerySearch_3">
+                    <dd>
+                        <h2>一文读懂深度学习与机器学习的差异</h2>
+                        <div class="summary">
+                            作者：oschina
+
+如果你经常想让自己弄清楚机器学习和深度学习的区别，阅读该文章，我将用通俗易懂的语言为你介绍他们之间的差别。机器学习和深度学习变得越来越火。突然之间，不管是了解的还是不了解的...                        </div>
+
+                        <ul>
+                            <li class="avatar_img"><img src="http://avatar.csdn.net/B/1/8/3_cpless.jpg" alt="cpless" title="cpless"></li>
+                            <li class="user_name">cpless</li>
+                            <li class="time">2017年10月26日 13:03</li>
+                            <li class="visited_num"><i class="icon iconfont icon-read"></i><span>301</span></li>
+                        </ul>
+                    </dd>
+                </a>
+            </dl>
+                                                    <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                <a href="http://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/79301158"  target="_blank" strategy="BlogCommendFromQuerySearch_4">
+                    <dd>
+                        <h2>绝密 | 机器学习老手不会轻易告诉你的12件事儿</h2>
+                        <div class="summary">
+                            
+
+
+  编译 | AI科技大本营 
+  参与 | 彭硕 刘畅 
+  编辑 | 明明
+
+
+机器学习是人工智能的核心，而机器学习的算法是其最重要的武器。机器学习算法可以从例子中归纳出执行重要任务的重要方...                        </div>
+
+                        <ul>
+                            <li class="avatar_img"><img src="http://avatar.csdn.net/6/9/F/3_dqcfkyqdxym3f8rb0.jpg" alt="dQCFKyQDXYm3F8rB0" title="dQCFKyQDXYm3F8rB0"></li>
+                            <li class="user_name">dQCFKyQDXYm3F8rB0</li>
+                            <li class="time">2018年02月09日 18:36</li>
+                            <li class="visited_num"><i class="icon iconfont icon-read"></i><span>1526</span></li>
+                        </ul>
+                    </dd>
+                </a>
+            </dl>
+                                                    <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                <a href="http://blog.csdn.net/imail2016/article/details/52086061"  target="_blank" strategy="BlogCommendFromQuerySearch_5">
+                    <dd>
+                        <h2>人工智能、机器学习、深度学习三者之间的同心圆关系</h2>
+                        <div class="summary">
+                            当谷歌 DeepMind 团队的 AlphaGo 打败了李世石时，媒体就用人工智能、机器学习和深度学习这三个术语来描述 DeepMind 是如何取得胜利的。
+
+
+
+今年早些时候，当谷歌 Dee...                        </div>
+
+                        <ul>
+                            <li class="avatar_img"><img src="http://avatar.csdn.net/A/8/7/3_imail2016.jpg" alt="imail2016" title="imail2016"></li>
+                            <li class="user_name">imail2016</li>
+                            <li class="time">2016年08月01日 15:27</li>
+                            <li class="visited_num"><i class="icon iconfont icon-read"></i><span>2012</span></li>
+                        </ul>
+                    </dd>
+                </a>
+            </dl>
+                                                    <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                <a href="http://blog.csdn.net/dukai392/article/details/70271574"  target="_blank" strategy="BlogCommendFromQuerySearch_6">
+                    <dd>
+                        <h2>一张图看懂AI、机器学习和深度学习的区别</h2>
+                        <div class="summary">
+                            AI（人工智能）是未来，是科幻小说，是我们日常生活的一部分。所有论断都是正确的，只是要看你所谈到的AI到底是什么。
+
+　　例如，当谷歌DeepMind开发的AlphaGo程序打败韩国职业围棋高手Lee...                        </div>
+
+                        <ul>
+                            <li class="avatar_img"><img src="http://avatar.csdn.net/1/A/B/3_dukai392.jpg" alt="dukai392" title="dukai392"></li>
+                            <li class="user_name">dukai392</li>
+                            <li class="time">2017年04月20日 16:54</li>
+                            <li class="visited_num"><i class="icon iconfont icon-read"></i><span>13311</span></li>
+                        </ul>
+                    </dd>
+                </a>
+            </dl>
+                                                    <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                <a href="http://blog.csdn.net/np4rHI455vg29y2/article/details/79092592"  target="_blank" strategy="BlogCommendFromQuerySearch_7">
+                    <dd>
+                        <h2>【人工智能】数据科学、机器学习和人工智能：没有多大交集，区别是什么，2017年发展和2018年趋势又是如何？</h2>
+                        <div class="summary">
+                            翻译 | AI科技大本营参与 | Shawn编辑 | Donna［AI科技大本营导读］我们常常提及数据科学、机器学习和人工智能，也有一个整体的概念。但是，如果要清晰地说出三者的定义分别是什么，区别又是...                        </div>
+
+                        <ul>
+                            <li class="avatar_img"><img src="http://avatar.csdn.net/B/0/8/3_np4rhi455vg29y2.jpg" alt="np4rHI455vg29y2" title="np4rHI455vg29y2"></li>
+                            <li class="user_name">np4rHI455vg29y2</li>
+                            <li class="time">2018年01月18日 00:00</li>
+                            <li class="visited_num"><i class="icon iconfont icon-read"></i><span>129</span></li>
+                        </ul>
+                    </dd>
+                </a>
+            </dl>
+                                                    <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                <a href="http://blog.csdn.net/tangdongxue/article/details/53675998"  target="_blank" strategy="BlogCommendFromQuerySearch_8">
+                    <dd>
+                        <h2>视觉基础：关于机器视觉、机器学习及人工智能领域</h2>
+                        <div class="summary">
+                            ﻿﻿
+http://www.cnblogs.com/dzyBK/p/4983657.html
+1.1
+重要会议
+（1）机器视觉重要会议
+CVPR：Conferenceon
+ Compute...                        </div>
+
+                        <ul>
+                            <li class="avatar_img"><img src="http://avatar.csdn.net/4/7/1/3_tangdongxue.jpg" alt="tangdongxue" title="tangdongxue"></li>
+                            <li class="user_name">tangdongxue</li>
+                            <li class="time">2016年12月15日 20:50</li>
+                            <li class="visited_num"><i class="icon iconfont icon-read"></i><span>594</span></li>
+                        </ul>
+                    </dd>
+                </a>
+            </dl>
+                                                    <dl class="clearfix csdn-tracking-statistics recommend_article" data-mod="popu_387" data-poputype="feed"  data-feed-show="false"  data-dsm="post">
+                <a href="http://blog.csdn.net/u010976453/article/details/54382562"  target="_blank" strategy="BlogCommendFromQuerySearch_9">
+                    <dd>
+                        <h2>机器学习中的概率和信息论</h2>
+                        <div class="summary">
+                            在本文中，我们讨论概率和信息论。概率论是用于表示不确定性陈述(statement) 的数学框架。它不仅提供了量化不确定性的方法，也提供了用于导出新的不确定性陈述的公理。在人工智能领域，我们主要以两种方...                        </div>
+
+                        <ul>
+                            <li class="avatar_img"><img src="http://avatar.csdn.net/7/D/B/3_u010976453.jpg" alt="u010976453" title="u010976453"></li>
+                            <li class="user_name">u010976453</li>
+                            <li class="time">2017年01月12日 22:19</li>
+                            <li class="visited_num"><i class="icon iconfont icon-read"></i><span>770</span></li>
+                        </ul>
+                    </dd>
+                </a>
+            </dl>
+                              </div>
+  </main>
+<aside>
+    <div class="right_box user_info">
+    <dl class="inf_bar clearfix">
+        <dt class="csdn-tracking-statistics tracking-click" data-mod="popu_381">
+                <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0" target="_blank">
+                    <img src="http://avatar.csdn.net/6/9/F/3_dqcfkyqdxym3f8rb0.jpg" class="avatar_pic">
+        </a>
+      </dt><dd>
+            <h3 class="csdn-tracking-statistics tracking-click"  data-mod="popu_380"><a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0" target="_blank" id="uid">dqcfkyqdxym3f8rb0</a></h3>
+            <div class="medals" title="">
+                      </div>
+                    </dd>
+    </dl>
+    <div class="inf_number_box clearfix">
+        <dl title="314">
+            <dt>原创</dt>
+            <dd>314</dd>
+        </dl>
+        <dl title="851">
+            <dt>粉丝</dt>
+            <dd id='fan'>851</dd>
+        </dl>
+        <dl title="332">
+            <dt>喜欢</dt>
+            <dd>332</dd>
+        </dl>
+        <dl title="459">
+          <dt>评论</dt>
+          <dd>459</dd>
+        </dl>
+    </div>
+
+</div>
+<div class="interflow clearfix">
+      <div class="badge gradeAndbadge">
+        <div>
+                                    <img src='http://c.csdnimg.cn/jifen/images/xunzhang/xunzhang/chizhiyiheng.png' alt='持之以恒'>
+                                            </div>
+    </div>
+      <div class="grade gradeAndbadge gradewidths">
+      <span>等级：</span>
+      <div>
+        <a href="http://blog.csdn.net/home/help.html#level" title="6级,点击查看等级说明" target="_blank">
+          <img class="grade-img" src="http://c.csdnimg.cn/jifen/images/xunzhang/jianzhang/blog6.png" alt="6级,点击查看等级说明">
+        </a>
+      </div>
+    </div>
+    <div class="gradeAndbadge gradewidths" title="615123">
+        <span>访问量：</span>
+        <span class="num odd-overhidden">61万+</span>
+    </div>
+
+    <div class="gradeAndbadge gradewidths" title="9745">
+      <span>积分：</span>
+      <span  class="num odd-overhidden">9745</span>
+    </div>
+    <div class="gradeAndbadge gradewidths" title="2222">
+        <span>排名：</span>
+        <span class="num odd-overhidden">2222</span>
+    </div>
+
+</div>
+          <div class="extension_other csdn-tracking-statistics tracking-click" data-mod="popu_389">
+          <!--u3032528-->
+        <div class="flashrecommend">
+                        <script type="text/javascript" src="//cee1.iteye.com/bwocoltly.js"></script>
+                    </div>
+      </div>
+            <div class="writings">
+      <div class="public_signal clearfix">
+        <h3>他的最新文章</h3>
+        <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0" target="_blank" class="more"><span>更多文章</span></a>
+      </div>
+        <ul class="inf_list clearfix csdn-tracking-statistics tracking-click" data-mod="popu_382">
+                        <li class="clearfix">
+                <a href="http://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/79448748" target="_blank">AI 一分钟 | 全国政协委员李彦宏：中国人工智能是世界第二；AI独角兽可获“特批”</a>
+            </li>
+                        <li class="clearfix">
+                <a href="http://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/79448732" target="_blank">刚刚，李克强总理宣布了人工智能重大消息</a>
+            </li>
+                        <li class="clearfix">
+                <a href="http://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/79444469" target="_blank">刚刚，李克强总理宣布了人工智能重大消息</a>
+            </li>
+                        <li class="clearfix">
+                <a href="http://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/79442388" target="_blank">从比尔·盖茨说起，中国AI到底能否超过美国？</a>
+            </li>
+                        <li class="clearfix">
+                <a href="http://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/79442371" target="_blank">百度要回归 A 股？</a>
+            </li>
+                    </ul>
+    </div>
+                <div class="user-hotArticle sort ClassSort">
+            <h3>文章分类</h3>
+            <ul class="hotArticle-list sort-list ClassSort-list">
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/category/7353144" class="odd-overhidden floatL">AI</a>
+                        <div class="read list-left floatR"><span>84篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/category/7353145" class="odd-overhidden floatL">人工智能</a>
+                        <div class="read list-left floatR"><span>86篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/category/7457372" class="odd-overhidden floatL">机器人</a>
+                        <div class="read list-left floatR"><span>1篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/category/7459436" class="odd-overhidden floatL">神经网络</a>
+                        <div class="read list-left floatR"><span>1篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/category/7459791" class="odd-overhidden floatL">机器学习</a>
+                        <div class="read list-left floatR"><span>2篇</span></div>
+                    </li>
+                                    <li class="clearfix">
+                        <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/category/7460241" class="odd-overhidden floatL">Python</a>
+                        <div class="read list-left floatR"><span>1篇</span></div>
+                    </li>
+                            </ul>
+            <div class="unfold-btn">
+              <span>展开</span><i class="icon iconfont icon-xiajiantou"></i>
+            </div>
+        </div>
+    <!--    [StartShowSelfColumn]-->
+    <!--    [EndShowSelfColumn]-->
+            <div class="user-hotArticle sort timeSort">
+          <h3>文章存档</h3>
+          <ul class="hotArticle-list timeSort-list">
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/month/2018/03" class="odd-overhidden floatL">2018年3月</a>
+                  <div class="read list-left floatR"><span>25篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/month/2018/02" class="odd-overhidden floatL">2018年2月</a>
+                  <div class="read list-left floatR"><span>89篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/month/2018/01" class="odd-overhidden floatL">2018年1月</a>
+                  <div class="read list-left floatR"><span>139篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/month/2017/12" class="odd-overhidden floatL">2017年12月</a>
+                  <div class="read list-left floatR"><span>110篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/month/2017/11" class="odd-overhidden floatL">2017年11月</a>
+                  <div class="read list-left floatR"><span>108篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/month/2017/10" class="odd-overhidden floatL">2017年10月</a>
+                  <div class="read list-left floatR"><span>82篇</span></div>
+                </li>
+                            <li class="clearfix">
+                  <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/month/2017/09" class="odd-overhidden floatL">2017年9月</a>
+                  <div class="read list-left floatR"><span>34篇</span></div>
+                </li>
+                      </ul>
+          <div class="unfold-btn">
+            <span>展开</span><i class="icon iconfont icon-xiajiantou"></i>
+          </div>
+        </div>
+            <div class="user-hotArticle">
+        <h3>他的热门文章</h3>
+        <ul class="hotArticle-list csdn-tracking-statistics tracking-click" data-mod="popu_521">
+<!--        [StartHotArticles]-->
+                            <li>
+                    <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/78478523">2017清华本科生特等奖得主出炉，AI学霸乔明达获奖</a>
+                    <div class="read list-left"><i class="icon iconfont icon-read"></i><span>21140</span></div>
+                </li>
+                            <li>
+                    <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/79106640">速成班出来的AI人才，老板到底要不要？6位导师告诉你行业真相</a>
+                    <div class="read list-left"><i class="icon iconfont icon-read"></i><span>17847</span></div>
+                </li>
+                            <li>
+                    <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/78466821">@那些想要转行AI的人：送你一份人工智能入门指南</a>
+                    <div class="read list-left"><i class="icon iconfont icon-read"></i><span>17635</span></div>
+                </li>
+                            <li>
+                    <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/78563720">AI战场，李彦宏马化腾马云都在频频刷脸，周鸿祎和他的360在想啥呢？</a>
+                    <div class="read list-left"><i class="icon iconfont icon-read"></i><span>15776</span></div>
+                </li>
+                            <li>
+                    <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/78318780">特斯拉首次正面回应在华建厂事宜！别高兴太早，独资建厂的特斯拉给不了你白菜价</a>
+                    <div class="read list-left"><i class="icon iconfont icon-read"></i><span>13009</span></div>
+                </li>
+                            <li>
+                    <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/78746427">连黄牛党都开始玩AI了，春节抢票不加钱是回不去了</a>
+                    <div class="read list-left"><i class="icon iconfont icon-read"></i><span>10812</span></div>
+                </li>
+                            <li>
+                    <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/78614415">苹果曝光无人车新进展，这名华人工程师是主要贡献者</a>
+                    <div class="read list-left"><i class="icon iconfont icon-read"></i><span>9774</span></div>
+                </li>
+                            <li>
+                    <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/79215683">1.75亿美元！吴恩达第三锤：宣布成立AI基金AIFund</a>
+                    <div class="read list-left"><i class="icon iconfont icon-read"></i><span>9746</span></div>
+                </li>
+                            <li>
+                    <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/79066818">从15000个Python开源项目中精选的Top30，Github平均star为3707，赶紧收藏！</a>
+                    <div class="read list-left"><i class="icon iconfont icon-read"></i><span>8478</span></div>
+                </li>
+                            <li>
+                    <a href="http://blog.csdn.net/dqcfkyqdxym3f8rb0/article/details/78529592">中国“神威”获超算排行榜四连冠，却遭外媒质疑</a>
+                    <div class="read list-left"><i class="icon iconfont icon-read"></i><span>8402</span></div>
+                </li>
+            <!--        [EndHotArticles]-->
+        </ul>
+    </div>
+    
+<!--    [startcustom]-->
+    <!--    [endcustom]-->
+  <div class="fixRight_box" style="height:256px">
+    <div class="fixRight">
+                    <!--u3163270-->
+                        <script type="text/javascript" src="//cee1.iteye.com/avneunkwb.js"></script>
+                          <div class="persion_article"></div>
+    </div>
+  </div>
+</aside>
+</div>
+
+<div class="left_fixed">
+    <div class="left_show_button">
+        <span>
+          <i class="icon iconfont icon-youjiantou"></i>
+        </span>
+    </div>
+    <ul class="left_menu" id="share_box">
+        <li>
+            <button class="left-fixed-btn btn-like csdn-tracking-statistics tracking-click" data-mod="popu_373" target="_self" title="点赞">
+                <a href="javascript:void(0);" class="iconbox border_red" ><i class="icon iconfont icon-dianzan"></i></a>
+                <a class="txt" href="javascript:void(0);">2</a>
+            </button>
+        </li>
+        <li id="blog_artical_directory">
+            <button class="left-fixed-btn left_menu_btn csdn-tracking-statistics tracking-click" data-mod="popu_372" target="_self" title="目录">
+                <a href="javascript:void(0);" class="iconbox border_black" ><i class="icon iconfont icon-mulu"></i></a>
+            </button>
+        </li>
+        <li class="menu_con">
+            <div class="list_father">
+                <div class="arr_box">
+                    <button class="btn-noborder arr-btn scroll-down  left_scroll_down"><i class="icon iconfont icon-xiajiantou"></i></button>
+                    <button class="btn-noborder arr-btn scroll-up left_scroll_top"><i class="icon iconfont icon-shangjiantou"></i></button>
+                </div>
+                <div class="arr"></div>
+                <div id="csdnBlogDir"></div>
+            </div>
+        </li>
+        <!--        <li>-->
+        <!--            <button class="left-fixed-btn btn-like tracking-ad" data-mod="popu_373" target="_self">-->
+        <!--                <span class="iconbox border_red"><i class="icon iconfont icon-xihuan-"></i></span>-->
+        <!--                <span class="txt">喜欢</span>-->
+        <!--                <span class="untxt">取消喜欢</span>-->
+        <!--            </button>-->
+        <!--        </li>-->
+        <li>
+            <button class="left-fixed-btn csdn-tracking-statistics tracking-click" data-mod="popu_374"  id="com-quick-collect" target="_self" title="收藏">
+                <a href="javascript:void(0);" class="iconbox border_purple" ><i class="icon iconfont icon-shoucang"></i></a>
+            </button>
+        </li>
+        <li>
+            <button class="left-fixed-btn btn-pinglun csdn-tracking-statistics tracking-click" data-mod="popu_544" title="评论">
+                <a href="javascript:void(0);" class="iconbox border_purple" ><i class="icon iconfont icon-pinglun"></i></a>
+            </button>
+        </li>
+        <li class="bdsharebuttonbox csdn-tracking-statistics tracking-click" data-mod="popu_172">
+            <a class="bds_tsina outside left-fixed-btn" data-cmd="tsina" title="分享到新浪微博"></a>
+            <span class="iconbox border_red2"><i class="icon iconfont icon-xinlang"></i></span>
+        </li>
+        <li class="bdsharebuttonbox csdn-tracking-statistics tracking-click" data-mod="popu_172">
+            <a class="bds_weixin outside left-fixed-btn" data-cmd="weixin" title="分享到微信"></a>
+            <span class="iconbox border_green"><i class="icon iconfont icon-weixin"></i></span>
+        </li>
+        <li class="bdsharebuttonbox csdn-tracking-statistics tracking-click" data-mod="popu_172">
+            <a class="bds_qzone outside left-fixed-btn" data-cmd="qzone" title="分享到QQ空间"></a>
+            <span class="iconbox border_blue"><i class="icon iconfont icon-QQ"></i></span>
+        </li>
+        <li id="share_box">
+            
+            <div class="bdsharebuttonbox csdn-tracking-statistics tracking-click" data-mod="popu_172">
+                
+                
+                
+            </div>
+        </li>
+    </ul>
+</div>
+<div id="pop_win"></div>
+<div id="popup_mask"></div>
+<div class="pop_CA_cover" ></div>
+<div class="pop pop_CA" >
+    <div class="CA_header">
+        收藏助手
+        <span class="cancel_icon"  id="fapancle" ></span>
+    </div>
+    <iframe src="" id="collectIframe" frameborder="0" width="100%" height="360"  scrolling="no" ></iframe>
+</div>
+<!--举报-->
+<div id="report_dialog" style="top: 250px; left: 343.5px;"><div id="panel_report">
+    <div class="panel_head">不良信息举报</div>
+    <form method="post" id="frmReport" class="panel_body">
+        <table border="0" cellpadding="0" cellspacing="4" class="pop_table">
+            <tbody><tr><td colspan="2">您举报文章：<a href="http://blog.csdn.net/dQCFKyQDXYm3F8rB0/article/details/79064076" target="_blank">学习数据科学、机器学习与AI没有多大交集，一文告诉你三者最大区别</a></td></tr>
+            <tr>
+                <th style="width:60px;">举报原因：</th>
+                <td id="panel_reporttype">
+                    <label><input type="radio" class="report_type" id="report_sex" name="report_type" value="1">色情</label>
+                    <label><input type="radio" class="report_type" id="report_Politics" name="report_type" value="2">政治</label>
+                    <label><input type="radio" class="report_type" id="report_copy" name="report_type" value="3">抄袭</label>
+                    <label><input type="radio" class="report_type" id="report_ad" name="report_type" value="4">广告</label>
+                    <label><input type="radio" class="report_type" id="report_want" name="report_type" value="5">招聘</label>
+                    <label><input type="radio" class="report_type" id="report_call" name="report_type" value="6">骂人</label>
+                    <br>
+                    <label><input type="radio" class="report_type" id="report_other" name="report_type" value="7">其他</label>
+                    <input type="text" name="report_other_content" id="report_other_content" maxlength="30" style="display: none;">
+                </td>
+            </tr>
+            <tr id="panel_originalurl" style="display: none;">
+                <th>原文地址：</th>
+                <td>
+                    <input id="originalurl" value="http://" name="originalurl" type="text" style="width: 90%;">
+                </td>
+            </tr>
+            <tr>
+                <th id="sp_reason">原因补充：</th>
+                <td>
+                    <textarea id="report_description" style="width: 300px;" rows="3" name="report_description"></textarea>
+                    <p id="sp_n" style="color:#999;margin:0px;padding:0px;">(最多只允许输入30个字)</p>
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input id="btnSubmitReport" name="submit" type="image" align="middle" class="btn_1" src="http://csdnimg.cn/release/phoenix/images/btn_submit.jpg">
+                    <span style="padding-left:20px;"></span>
+                    <img id="btnCloseReportDialog" src="http://csdnimg.cn/release/phoenix/images/btn_cancel.jpg" align="middle">
+                    <div id="error" style="color: Red">
+                    </div>
+                </td>
+            </tr>
+            </tbody></table>
+    </form>
+</div>
+    <script language="javascript" type="text/javascript">
+        var isComment=0;
+        //显示隐藏地址
+        $(function () {
+          console.log("version:phoenix");
+            if(isComment){
+                $("#report_description").attr("disabled",true);
+                $("#sp_n").hide();
+                $("#sp_reason").html("评论内容：");
+            }
+            $(".report_type").click(function () {
+                $("#panel_originalurl,#report_other_content").hide();
+                switch ($(this).val()) {
+                    case '3':
+                        $("#panel_originalurl").show();
+                        $("#originalurl").focus();
+                        break;
+                    case '7':
+                        if(isComment){
+                            $("#report_other_content").show().focus();
+                        }
+                        break;
+                }
+
+            });
+
+            $("#frmReport").submit(function () {
+                if (!currentUserName) {
+
+                    if (confirm("您的操作必须登录，是否登录？")) {
+                        location.href = "http://passport.csdn.net/account/login?from=" + encodeURIComponent(location.href);
+                        return false;
+                    }
+                    return false;
+                }
+
+                var reportType = $("input[name=report_type]:checked").val();
+                if(!reportType){
+                    alert("请选择举报原因！");
+                    return false;
+                }
+                var otherInfo = "";
+                switch (reportType) {
+                    case '3':
+                        otherInfo = $("#originalurl").val();
+                        if (otherInfo == ""||otherInfo=="http://") {
+                            alert("举报抄袭必须提供原创文章地址！");
+                            $("#originalurl").focus();
+                            return false;
+                        } else if(!checkeURL(otherInfo)) {
+                            alert("请输入正确的原创文章地址！");
+                            $("#originalurl").focus();
+                            return false;
+                        }
+                        break;
+                    case '7':
+                        otherInfo = $("#report_other_content").val();
+                        if (isComment && !otherInfo) {
+                            alert("请填写举报的具体原因！");
+                            $("#report_other_content").focus();
+                            return false;
+                        }
+                        if(!isComment){
+                            if(!$("#report_description").val()){
+                                alert("请填写举报的具体原因！");
+                                $("#report_description").focus();
+                                return false;
+                            }
+                        }
+                        break;
+                }
+                if(!isComment){
+                    if($("#report_description").val().length>30){
+                        alert("举报原因最多只允许输入30个字！");
+                        return false;
+                    }
+                }
+	            nowTime = {
+		            year: new Date().getFullYear(),
+		            month: parseInt(new Date().getMonth())+1,
+		            day: new Date().getDate(),
+		            hours: parseInt(new Date().getHours())+1,
+		            minutes: parseInt(new Date().getMinutes())+1,
+		            seconds: parseInt(new Date().getSeconds())+1
+	            };
+	            var data = {
+		            articleId: fileName,
+		            commentId: 0,
+		            reportType: reportType,
+		            originalurl: $("#originalurl").val(),
+		            report_other_content: $("#report_other_content").val(),
+		            report_description: $("#report_description").val(),
+		            currentUserName: currentUserName,
+		            updatetime: nowTime.year+'/'+nowTime.month+'/'+nowTime.day+' '+ nowTime.hours+':'+nowTime.minutes+':'+seconds,
+		            blogUser: username
+	            };
+	            if(!isComment){//如果是举报文章
+		            data.report_other_content = data.report_description;
+		            // data.report_description = "1. 神经网络这是一个常见的神经网络的图：这是一个常见的三层神经网络的基本构成，Layer L1是输入层，Layer L2是隐含层";
+	            }
+
+	            $.post(blog_address + "/common/report?id="+fileName+"&t=2", data, function (data) {
+		            if (data.result == 1){
+			            SetError("感谢您的举报，我们会尽快审核！");
+		            }else{
+			            if (data.content) alert(data.content);
+		            }
+
+	            });
+                return false;
+            });
+
+            $("#btnCloseReportDialog").click(function () {
+                CloseDiv();
+            });
+
+        });
+
+        //提示后关闭方法
+        function SetError(error) {
+            $("#btnCloseReportDialog").trigger("click");
+            alert(error);
+            CloseDiv();
+        }
+
+        //关闭方法
+        function CloseDiv() {
+
+            $.removeMask();
+            $("#report_dialog").hide();
+            return false;
+        }
+
+        //验证url
+        function checkeURL(url){
+            return /^http(s)?:\/\/([\w-]+\.)+[\w-]+/i.test(url);
+        }
+    </script>
+</div>
+<!--  fixme 后期清理掉  -->
+<div id="a52b5334d" style="width: 1px; height: 1px; display: none;">
+    <script id="adJs52b5334"></script>
+    <script>document.getElementById("adJs52b5334").src = "http://ads.csdn.net/js/opt/52b5334.js?t=" + Math.random();</script>
+</div>
+<script>
+    $(".MathJax").remove();
+</script>
+<script type="text/javascript" src="//static.blog.csdn.net/mdeditor/public/res/bower-libs/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- <script type="text/javascript" src="http://passport.csdn.net/content/loginbox/login.js"></script> -->
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<script type="text/javascript" >
+    if($(".article_collect li").length==1){$(".article_collect").hide();}
+    if($(".article_tags li").length==1){$(".article_tags").hide();}
+    $(".edit a").attr("href","http://mp.blog.csdn.net/postedit/"+fileName);
+    $.each($(".edu_li a"),function(){$(this).attr("href",$(this).attr("href").replace("blog7","blog9"))});
+    new CNick('#uid').showNickname();
+
+    if($("#fan").html()=="")
+    {
+	    $("#fan").html(0);
+    }
+</script>
+<script src="http://c.csdnimg.cn/public/common/append_mark/appendMark.min.js?v=5.00.43" type="text/javascript"></script>
+<script type="text/javascript">
+    appendMark($('.recommend_list').children('a').find('dt'),$('.extension_other'),$('.yd_a_d_feed_cla'))
+</script>
+<script src='http://csdnimg.cn/pubfooter/js/publib_footer-1.0.3.js?v201802051726' data-isfootertrack="false"></script>
+<script src='http://csdnimg.cn/public/common/gotop/js/goTop-v1.0.min.js?v20180305174820'></script>
+<script>
+    GoTop({
+        right: 8,
+        hasReport: true,
+        reportFun: function() {
+            $.createMask();
+            var r = blog_address + "/common/report?id=" + fileName + "&t=" + 2;
+            if (3 == 2) {
+                var s = n.parentNode.parentNode.parentNode.getAttribute("floor");
+                r += "&floor=" + s
+            }
+            var i = (document.documentElement.clientHeight - 400) / 2 + (document.documentElement.scrollTop || document.body.scrollTop),
+                a = (document.documentElement.clientWidth - 400) / 2;
+
+            $("#report_dialog").load(r).css({
+                //top: i + "px",
+                top: '20%',
+                left: a
+            }).show()
+        }
+    })
+</script>
+<div id="loginWrap"></div>
+<div id="dlMask"></div>
+</body>
